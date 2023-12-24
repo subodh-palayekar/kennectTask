@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <h1>Get Prime Numbers in Range</h1>
+      <div class="inputFields">
+        <label for="start">Start:</label>
+        <input  required ="number" id="start" placeholder="Enter start number" />
+
+        <label for="end">End:</label>
+        <input required type="number" id="end" placeholder="Enter end number" />
+      </div>
+
+      <button onclick="calculatePrime()">Calculate Primes</button>
+      <button id="showDetails">show Details</button>
+      <div id="popup-container">
+        <div class="tab" id="tab1">
+            <table id="pop-up-table1">
+                <thead>
+                  <tr>
+                    <th>Number</th>
+                    <th>Result</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+          </div>
+        <div class="tab" id="tab2">
+            <table id="pop-up-table2">
+                <thead>
+                  <tr>
+                    <th>Number</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </div>
+        <button id="close-popup-btn">Close</button>
+      </div>
+
+      <div class="table-container">
+        <table id="resultTable">
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Result</th>
+                <th>Time22</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+      </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
